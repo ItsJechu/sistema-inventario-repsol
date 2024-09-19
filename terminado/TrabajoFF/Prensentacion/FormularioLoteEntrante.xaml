@@ -1,0 +1,34 @@
+﻿<Window x:Class="Prensentacion.FormularioLoteEntrante"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prensentacion"
+        mc:Ignorable="d"
+        Title="FormularioLoteEntrante" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="343*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnregistrar" Content="registrar" HorizontalAlignment="Left" Margin="369,30,0,0" VerticalAlignment="Top" Width="75" Click="btnregistrar_Click" Grid.Column="2"/>
+        <TextBox x:Name="txtcontenido" HorizontalAlignment="Left" Height="23" Margin="7,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="txtfecha" HorizontalAlignment="Left" Height="23" Margin="7,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="txttipo" HorizontalAlignment="Left" Height="23" Margin="7,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="txtID_amacen" HorizontalAlignment="Left" Height="23" Margin="7,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <Label Content="contenido" HorizontalAlignment="Left" Margin="25,36,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Fecha  entrada" HorizontalAlignment="Left" Margin="25,64,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="19,89,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="ID almacen" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="ALmacenes" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dtalmacen" HorizontalAlignment="Left" Height="98" Margin="10,311,0,0" VerticalAlignment="Top" Width="580" Grid.ColumnSpan="3"/>
+        <ComboBox HorizontalAlignment="Left" Margin="146,93,0,0" VerticalAlignment="Top" Width="120" Grid.Column="2">
+            <Button Content="Petroleo"/>
+            <Button Content="Combustible"/>
+        </ComboBox>
+        <DataGrid x:Name="dgentrante" HorizontalAlignment="Left" Height="114" Margin="0,166,0,0" VerticalAlignment="Top" Width="505" Grid.ColumnSpan="3"/>
+        <Label Content="No cmabia" HorizontalAlignment="Left" Margin="297,59,0,0" VerticalAlignment="Top" Height="84" Width="120" Grid.Column="2"/>
+
+    </Grid>
+</Window>
